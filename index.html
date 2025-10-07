@@ -1,79 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>Marisol's Portfolio</title>
+  <link rel="stylesheet" href="styles/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Raleway', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom right, #02cafc, lab(87.99% -56.09 2.06));
+      color: #333;
+      text-align: center;
+    }
+
+    header {
+      background-color: #4f46e5;
+      padding: 1rem;
+      color: white;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    nav {
+      margin-top: 0.5rem;
+    }
+
+    nav a {
+      color: #ffffff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #a5f3fc;
+    }
+
+    .centerContent {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+    }
+
+    section {
+      margin-bottom: 2rem;
+    }
+
+    .roundedImage {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #4f46e5;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .roundedImage:hover {
+      transform: scale(1.05);
+    }
+
+    figcaption {
+      margin-top: 0.5rem;
+      font-style: italic;
+      color: #555;
+    }
+
+    iframe {
+      border: 0;
+      width: 90%;
+      max-width: 400px;
+      height: 250px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    .aboutBox {
+      max-width: 700px;
+      background-color: #ffffffcc;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .aboutBox h2 {
+      text-decoration: underline;
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      list-style-type: square;
+      text-align: left;
+      margin: 1rem auto;
+      padding-left: 1.5rem;
+      display: inline-block;
+    }
+
+    footer {
+      margin-top: 2rem;
+      padding: 1rem;
+      background-color: #4f46e5;
+      color: white;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
+
 <body>
-
   <header>
-    <h1>Hello World!</h1>
-  <h1 style="color: #c71585; font-family: 'Georgia', serif; text-align: center;">
-  Hello, I'm Marisol Rodriguez!
-</h1>
-
-<p style="background-color: #ffe4f2; padding: 10px; border-left: 4px solid #ff69b4;">
-  I'm passionate about web design and love learning about coding!!!
-</p>
-
-<img src="imgs/your-image.jpg" alt="My Profile Photo" style="border-radius: 50%; border: 3px solid #c71585; width: 200px;">
-
-
+    <h1>Marisol's Portfolio</h1>
     <nav>
-      <a href="#">About Me</a> |
-      <a href="https://nwscc.edu/">My Favorite Webpage</a> |
-      <a href="#">Favorite Place</a>
+      <a href="https://google.com" target="_blank">My Fav Website</a>
+      <a href="#">My Place of Peace</a>
+      <a href="cssProjects/index.html">CSS Projects</a>
     </nav>
   </header>
 
-  <main>
+  <main class="centerContent">
+    <!-- Local Photo -->
     <section>
-        <h2>My Photo</h2>
-        <img src="imgs/My Photo.jpg" alt="A photo of me" />
-        <p>This is a picture of me when I was heading to Nashville with friends.</p>
-    </section>
-    <section>
-        <h2>Online Image</h2>
-        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c2VhfGVufDB8fDB8fHww" alt="Sunset at the beach" />
-        <p>Watching the sunset at the beach is one of my favorite things to do.</p>
-    </section>
-    <section>
-        <h2>My Favorite Place</h2>
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3276.121185880595!2d-87.67254432500388!3d34.80289287288357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x887d49f132a7ba4d%3A0xfe2bf08c866d9145!2sThe%20Cascades!5e0!3m2!1sen!2sus!4v1757778777709!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"
-            width="600"
-            height="450"
-            style="border:0;"
-            allowfullscreen=""
-            loading="lazy">
-        </iframe>
-    </section>
-    <section>
-        <h2>About Me</h2>
-        <p>Hi! My name is <b>[Marisol Rodriguez]</b>. I’m a student at NWSCC.</p>
-        <p>I love <i>doing facials for skin care</i>, <i>makeup</i>, and <i>I love to dance</i>.</p>
-
-        <h3>My Goals:</h3>
-        <ul>
-        <li>Become an ethical hacker</li>
-        <li>Travel the world</li>
-        <li>Build cool apps</li>
-        <li>Become more knowledged in the tech world</li>
-        </ul>
+      <img class="roundedImage" src="imgs/My Photo.jpg" alt="A picture of Marisol Rodriguez" />
+      <figcaption>Hi! I'm Marisol Rodriguez.</figcaption>
     </section>
 
+    <!-- External Photo -->
+    <section>
+      <img class="roundedImage"
+        src="https://www.californiabeaches.com/wp-content/uploads/2014/09/bigs-Sunset-at-Wipeout-Beach-La-Jolla-California-e1482282928458.jpg"
+        alt="The calming beach scene" />
+      <figcaption>The beach brings me peace.</figcaption>
+    </section>
 
+    <!-- Google Maps Embed -->
+    <section>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d103646.62220836249!2d-83.58053486415791!3d35.72727741122202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x885953eacb08a589%3A0x4ab1d7ae7eb779a8!2sGatlinburg%2C%20TN%2037738!5e0!3m2!1sen!2sus!4v1759861454181!5m2!1sen!2sus"
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
 
+    <!-- About Me -->
+    <section class="aboutBox">
+      <h2>About Me</h2>
+      <p>
+        I'm <b>32</b> years old and currently a licensed real estate agent in the
+        <span style="color: blueviolet; font-weight: bold;">state of Alabama</span>.
+        I'm pursuing my <i>associate's degree</i> in
+        <span style="color: hotpink;">Cyber Security and Software Development</span>.
+      </p>
+      <p>
+        My goal is to become an <u>ethical hacker</u>, and also a
+        <b style="color: blue;">Software Engineer</b> to deepen my understanding of technology.
+      </p>
+      <p>Things I love doing in my free time:</p>
+      <ul>
+        <li><i>Spending time with family</i></li>
+        <li>Hanging out with <b>friends</b></li>
+        <li>Meditating</li>
+      </ul>
+      <p>
+        People say I’m an <span style="color: orange;">overachiever</span> and highly <i>motivated</i>.
+        I believe that all the effort I’m putting in now will absolutely pay off in the future!
+      </p>
+    </section>
+
+    <footer>Created by Marisol Rodriguez</footer>
   </main>
-
-  <footer>
-    <p>Created by [Marisol Rodriguez]</p>
-  </footer>
-
 </body>
+
 </html>
+
+
+
 
 
 

@@ -1,0 +1,134 @@
+/* HEADER / NAV / FOOTER */
+header,
+nav,
+footer {
+  background-color: #ff0266; /* bold hot pink */
+  color: black; /* black text */
+  text-align: center;
+  width: 100%;
+  padding: 1rem 0;
+}
+
+/* NAV LINKS */
+nav a {
+  color: #0a06ff; /* bold blue */
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #00c896; /* turquoise hover */
+}
+
+/* BODY */
+body {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: black; /* all text black by default */
+}
+
+/* MAIN BACKGROUND */
+main {
+  background-color: #0383fa; /* bold light blue */
+  background-image: url("https://www.transparenttextures.com/patterns/diamond-upholstery.png");
+  width: 100%;
+  height: auto;
+  padding-bottom: 2rem;
+}
+
+/* SECTION BLOCKS */
+section {
+  border: 3px solid #8338ec; /* bold purple */
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  background: #ffd6ff; /* light pink for contrast */
+  color: black;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+/* LIST STYLING */
+ul {
+  list-style-position: inside;
+}
+
+/* BUTTONS */
+button {
+  padding: 10px 20px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 5px;
+  border-radius: 6px;
+  font-family: 'Arial', sans-serif;
+  color: black;
+}
+
+/* HOVER BUTTON */
+.btn-hover {
+  background-color: #ffd500; /* bold yellow */
+  transition: background 0.3s ease;
+}
+
+.btn-hover:hover {
+  background: #ff6d00; /* bold orange */
+  color: white;
+}
+
+/* GLOW BUTTON */
+.btn-glow {
+  background: #3a86ff; /* bold blue */
+  color: black;
+  transition: box-shadow 0.3s ease;
+}
+
+.btn-glow:hover {
+  box-shadow: 0 0 12px #3a86ff;
+  color: white;
+}
+
+/* GALLERY WRAPPER */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: center;
+}
+
+/* GALLERY IMAGES */
+.gallery img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%; /* makes the images round */
+  transition: transform 0.3s, box-shadow 0.3s, filter 0.3s, opacity 0.3s;
+  border: 3px solid #ff0266; /* bold pink border */
+}
+
+/* HOVER EFFECT 1: Rotate & Shadow */
+.hover-one:hover {
+  transform: rotate(360deg) scale(1.4);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+  opacity: 1;
+}
+
+/* HOVER EFFECT 2: Gray to Color */
+.hover-two {
+  filter: grayscale(100%);
+}
+.hover-two:hover {
+  filter: grayscale(0%);
+  transform: scale(1.4);
+}
+
+/* HOVER EFFECT 3: Scale & Fade */
+.hover-three:hover {
+  transform: scale(1.4);
+  opacity: 0.6;
+}
+
+
