@@ -2,8 +2,10 @@
 header,
 nav,
 footer {
-  background-color: #ff0266; /* bold hot pink */
-  color: black; /* black text */
+  background-color: #ff0266;
+  /* bold hot pink */
+  color: black;
+  /* black text */
   text-align: center;
   width: 100%;
   padding: 1rem 0;
@@ -11,7 +13,8 @@ footer {
 
 /* NAV LINKS */
 nav a {
-  color: #0a06ff; /* bold blue */
+  color: #0a06ff;
+  /* bold blue */
   margin: 0 10px;
   text-decoration: none;
   font-weight: bold;
@@ -19,7 +22,8 @@ nav a {
 }
 
 nav a:hover {
-  color: #00c896; /* turquoise hover */
+  color: #00c896;
+  /* turquoise hover */
 }
 
 /* BODY */
@@ -27,12 +31,14 @@ body {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   margin: 0;
   padding: 0;
-  color: black; /* all text black by default */
+  color: black;
+  /* all text black by default */
 }
 
 /* MAIN BACKGROUND */
 main {
-  background-color: #0383fa; /* bold light blue */
+  background-color: #0383fa;
+  /* bold light blue */
   background-image: url("https://www.transparenttextures.com/patterns/diamond-upholstery.png");
   width: 100%;
   height: auto;
@@ -41,11 +47,13 @@ main {
 
 /* SECTION BLOCKS */
 section {
-  border: 3px solid #8338ec; /* bold purple */
+  border: 3px solid #8338ec;
+  /* bold purple */
   padding: 20px;
   margin: 20px auto;
   max-width: 800px;
-  background: #ffd6ff; /* light pink for contrast */
+  background: #ffd6ff;
+  /* light pink for contrast */
   color: black;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
@@ -70,18 +78,21 @@ button {
 
 /* HOVER BUTTON */
 .btn-hover {
-  background-color: #ffd500; /* bold yellow */
+  background-color: #ffd500;
+  /* bold yellow */
   transition: background 0.3s ease;
 }
 
 .btn-hover:hover {
-  background: #ff6d00; /* bold orange */
+  background: #ff6d00;
+  /* bold orange */
   color: white;
 }
 
 /* GLOW BUTTON */
 .btn-glow {
-  background: #3a86ff; /* bold blue */
+  background: #3a86ff;
+  /* bold blue */
   color: black;
   transition: box-shadow 0.3s ease;
 }
@@ -104,9 +115,11 @@ button {
   width: 140px;
   height: 140px;
   object-fit: cover;
-  border-radius: 50%; /* makes the images round */
+  border-radius: 50%;
+  /* makes the images round */
   transition: transform 0.3s, box-shadow 0.3s, filter 0.3s, opacity 0.3s;
-  border: 3px solid #ff0266; /* bold pink border */
+  border: 3px solid #ff0266;
+  /* bold pink border */
 }
 
 /* HOVER EFFECT 1: Rotate & Shadow */
@@ -120,6 +133,7 @@ button {
 .hover-two {
   filter: grayscale(100%);
 }
+
 .hover-two:hover {
   filter: grayscale(0%);
   transform: scale(1.4);
@@ -131,4 +145,47 @@ button {
   opacity: 0.6;
 }
 
+/*Project 3: Styled Quote Box */
+.quote-section {
+  text-align: center;
+  /* Centers all text and elements inside the section */
+  max-width: 30%;
+  /* Limits the section's width to 30% of the page */
+}
 
+.quote-section h3{
+    color: #3d3528; /*Changes the H3 text to a dark earthy brown */
+    font-family: 'Merriweather' serif; /* Uses Merriweather and the classic serif font for 
+    margin-bottom: 15px; /* Adds space below the heading */
+    text-transform: uppercase; /* Makes all heading 3 letters uppercase */
+    letter-spacing: 1px; /* Adds small spacing between letters for readability/cool factor */
+}
+
+.quote-box{
+    font-family: 'Georgia', serif; */ Uses Georgia and the classic serif font for a refined
+    font-style: italic; /* Italicizes text to make it look like an actual quote */
+    background-image: linear-gradient(135deg, #d9cbb4, #b7a68f), url("https://www.transparenttextures.com/patterns/black-paper.png");
+    background-blend-mode: multiply; /* Blends  the texture softly into the color */
+    padding: 20px 30px; /* Adds inner spacing around the quote */
+    border-left: 6px solid #5a4a3b; /* Adds a thick, dark brown stripe on the left */
+    border-radius: 10px; /* Rounds the corners slightly for a softer look */
+    box-shadow: 0 4px 10px gray; /* Adds a light shadow for depth */
+    color: #2e2b26; /* Sets the quote text to a charcoal gray */
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.quote-box:hover{
+  transform: translateY(-4px); /* Slightly lift the box when hovered */
+  box-shadow: 0 6px 14px gray; /* Makes the shadow deeper to enhance the lift */
+  background-image: linear-gradient(135deg, #b7a68f, #d9cbb4), url("https://www.transparenttextures.com/patterns/black-paper.png");
+}
+
+.quote-box cite{
+  display: block; /* Makes the citation appear on its own line */
+  margin-top: 13px; /* adds space above the author's name */
+  font-style: normal; /* Removes italics to contrast the quote text */
+  font-weight: bold; /* Makes the author's name stand out by making it bold */
+  color: #4d5d53; /* Sets a muted alive-green tone for the author name */
+  text-align: right; /* Aligns the author's name to the right edge */
+  letter-spacing: 0.5px; /* Adds small spacing between letters for balance */
+}
