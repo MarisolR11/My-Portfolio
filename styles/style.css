@@ -1,0 +1,49 @@
+header,
+nav,
+footer {
+  background-color: gray;
+  /* bold gray */
+  color: black;
+  /* black text */
+  text-align: center;
+  width: 100%;
+  padding: 1rem 0;
+}
+
+main {
+    background-color: #00c8fa;
+    background-image: url("https://www.transparenttextures.com/patterns/white-diamond-dark.png");
+    color:white;
+}
+
+.roundedImage {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.centerContent {
+    display: flex;
+    /* enables flexbox */
+    flex-direction: column;
+    /* stack sections vertically */
+    align-items: center;
+    /* center items horiontally */
+    justify-content: center;
+    /* center items vertically */
+    text-align: center;
+    /* center text inside sections */
+}
+
+.aboutBox {
+    border: 2px solid black; /* black border around the box */
+    padding: 20px; /* space inside the box */
+    margin: 20px auto; /* spacing around the box */
+    width: 70%; /* adjust width as needed */
+    text-align: left; /* left-aligns everything */
+    background-color: #111; /* optional: dark background so white border pops */
+    color: white; /* white text to make it readable */
+    border-radius: 8px; /* rounded corners */
+}
