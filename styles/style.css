@@ -10,10 +10,34 @@ footer {
   padding: 1rem 0;
 }
 
+/* NAV LINKS */
+nav a {
+  color: fuchsia;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #00c896;
+  /* turquoise hover */
+}
+
+/* BODY */
+body {
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: black;
+  /* all text black by default */
+}
+
+/* MAIN BACKGROUND */
 main {
     background-color: #00c8fa;
     background-image: url("https://www.transparenttextures.com/patterns/white-diamond-dark.png");
-    color:white;
+    color:black;
 }
 
 .roundedImage {
