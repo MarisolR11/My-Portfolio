@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
     <header>
@@ -22,7 +23,7 @@
 
   <!-- This is where the contact form lives-->
   <section>
-    <form>
+    <form class="contact-form">
         <h2>Contact Me</h2>
         <p>All areas with a * are required</p>
         <!--Asking the user for the name-->
@@ -57,7 +58,7 @@
         <input type="range" id="range" min="1" max="10" value="5" required>
         <!--Radio buttons-->
         <label>Preferred Contact Method:</label>
-        <div>
+        <div class="inline-options">
             <!--Check for Email-->
             <label>
                 <input type="radio" name="contactMethod" value="Email" checked>
@@ -75,7 +76,7 @@
         </div>
         <!--Checkboxes-->
         <label>Services Interest In:</label>
-        <div>
+        <div class="inline-options">
             <!--Check for Web Design-->
             <label>
                 <input type="checkbox" name="service" value="Web Design">

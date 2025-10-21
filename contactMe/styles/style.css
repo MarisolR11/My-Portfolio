@@ -1,0 +1,105 @@
+/* HEADER / NAV / FOOTER */
+header,
+nav,
+footer {
+  background-color: gray;
+  /* bold gray */
+  color: black;
+  /* black text */
+  text-align: center;
+  width: 100%;
+  padding: 1rem 0;
+}
+
+/* NAV LINKS */
+nav a {
+  color: fuchsia;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #00c896;
+  /* turquoise hover */
+}
+
+/* BODY */
+body {
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: black;
+  /* all text black by default */
+}
+
+/* MAIN BACKGROUND */
+main {
+    background-color: #00c8fa;
+    background-image: url("https://www.transparenttextures.com/patterns/white-diamond-dark.png");
+    color:white;
+}
+
+nav a {
+    color: gold;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    text-decoration: bold;
+}
+
+.contact-form {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px blue;
+    width: 400px;
+}
+
+.contact-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #5eff00;
+}
+
+.contact-form input[type="color"],
+.contact-form input[type="range"] {
+    padding: 2px;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #5eff00;
+    border: none;
+    color: red;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.contact-form button:hover{
+    background-color: #00FFFB;
+}
+
+.inline-options {
+    display: flex;
+    gap: 10px;
+}
