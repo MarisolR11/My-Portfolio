@@ -2,9 +2,9 @@
 header,
 nav,
 footer {
-  background-color: gray;
-  /* bold gray */
-  color: black;
+  background-color: black;
+  /* bold black */
+  color: white;
   /* black text */
   text-align: center;
   width: 100%;
