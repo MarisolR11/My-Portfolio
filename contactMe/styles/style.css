@@ -68,7 +68,7 @@ main {
     width: 100%;
     padding: 8px;
     border-radius: 6px;
-    border: 1px solid #5eff00;
+    border: 1px solid #ff00aa;
 }
 
 .contact-form input[type="color"],
@@ -79,9 +79,9 @@ main {
 .contact-form button {
     width: 100%;
     padding: 10px;
-    background-color: #5eff00;
+    background-color: #ff0077;
     border: none;
-    color: red;
+    color: black;
     font-size: 16px;
     border-radius: 5px;
     margin-top: 15px;
@@ -89,7 +89,7 @@ main {
 }
 
 .contact-form button:hover{
-    background-color: #00FFFB;
+    background-color: #00c3ff;
 }
 
 .inline-options {
