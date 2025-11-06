@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me</title>
     <link rel="stylesheet" href="styles/style.css">
-    <script src="scripts/script.js"></script>
 </head>
 <body>
     <header>
@@ -17,7 +16,7 @@
       <a href="../index.html">Home Page</a>
     </nav>
   </header>
-  <main>
+   <main>
         <!-- This is the introduction to the page-->
         <section class="introBox">
             <h2>Welcome to my Javascript introduction assignment!</h2>
@@ -91,6 +90,19 @@
                 <!-- Submit Button -->
                 <button type="submit">Send</button>
             </form>
+        </section>
+        <section id="resultContainer" style="display:none;">
+            <h2> Submitted Information </h2>
+            <table id="resultTable">
+                <thead>
+                    <tr>
+                        <th>Field</th>
+                        <th>Value</th>
+        
+                    </tr>
+                </thead>
+                <tbody><!-- Javascript will add more rows here!--></tbody>
+            </table>
         </section>
             <br>
     </main>
