@@ -39,6 +39,12 @@ main {
     background-color: #00c8fa;
     background-image: url("https://www.transparenttextures.com/patterns/white-diamond-dark.png");
     color:black;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 
 
